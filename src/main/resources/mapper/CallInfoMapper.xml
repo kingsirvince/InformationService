@@ -9,9 +9,10 @@
     <result column="Call_name" jdbcType="VARCHAR" property="callName" />
     <result column="Call_class" jdbcType="VARCHAR" property="callClass" />
     <result column="Call_grade" jdbcType="VARCHAR" property="callGrade" />
+    <result column="Call_unhandled" jdbcType="VARCHAR" property="callUnhandled" />
     <result column="Call_longitude" jdbcType="DECIMAL" property="callLongitude" />
     <result column="Call_latitude" jdbcType="DECIMAL" property="callLatitude" />
-    <result column="Channel_division_ID" jdbcType="VARCHAR" property="channelDivisionId" />
+    <result column="Call_ship" jdbcType="VARCHAR" property="callShip" />
     <result column="Call_mmsi" jdbcType="INTEGER" property="callMmsi" />
     <result column="Call_content" jdbcType="VARCHAR" property="callContent" />
     <result column="Datetime" jdbcType="TIMESTAMP" property="datetime" />

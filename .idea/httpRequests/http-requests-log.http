@@ -1,3 +1,187 @@
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T034756.200.json
+
+###
+
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T034709.200.json
+
+###
+
+POST http://localhost:8080/call/upload/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T034704.200.json
+
+###
+
+POST http://localhost:8080/call/upload/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T034512.200.json
+
+###
+
+POST http://localhost:8080/call/upload/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T033441.200.json
+
+###
+
+POST http://localhost:8080/call/upload/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T032734.200.json
+
+###
+
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T032709.200.json
+
+###
+
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T032154.200.json
+
+###
+
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T031910.200.json
+
+###
+
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T031905.200.json
+
+###
+
+POST http://localhost:8080/call/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-06-18T031648.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T023435.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T023355.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T022749.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T022507.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T022418.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T022018.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T021240.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T021231.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list?coordinate=BD09
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T013220.200.json
+
+###
+
+POST http://localhost:8080/ship/info/list
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-29T013155.200.json
+
+###
+
+POST http://localhost:8080/general/dynamic/getBerth
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-28T045059.200.json
+
+###
+
+POST http://localhost:8080/notice/info/getLatest?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
+Accept: */*
+enctype: "multipart/form-data"
+
+<> 2020-05-28T044959.200.json
+
+###
+
 POST http://36.26.4.82:9202/InformationService/pipeline/info/getLimitHeight?requestId=requestId:10002&cityName=湖州
 Accept: */*
 enctype: "multipart/form-data"
@@ -207,188 +391,6 @@ Accept: */*
 enctype: "multipart/form-data"
 
 <> 2019-11-19T041943.200.json
-
-###
-
-POST http://192.168.2.84:8080/ship/monitor/findSeveralByType?requestId=requestId:10001&typeName=bridge/info/list
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T041911.200.json
-
-###
-
-POST http://192.168.2.84:8080/ship/monitor/findSeveralByType?requestId=requestId:10001&typeName=bridge/info/list
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T040421.200.json
-
-###
-
-POST http://192.168.2.84:8080/notice/info/getLatest?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T040324.200.json
-
-###
-
-POST http://192.168.2.84:8080/notice/info/getLatest?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T022202.200.json
-
-###
-
-POST http://localhost:8080/ship/upload/update?shipMmsi=2343562&shipLongitude=120.3344433&shipLatitude=30.22222&shipHeading=23&shipSpeed=10&shipLoad=350&shipState=在航&requestId=10001
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T020422.200.json
-
-###
-
-POST http://localhost:8080/ship/upload/update?shipMmsi=2343562&shipLongitude=120.3344433&shipLatitude=30.22222&shipHeading=30&shipSpeed=10&shipLoad=350&shipState=在航&requestId=10001
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T020354.200.json
-
-###
-
-POST http://localhost:8080/ship/upload/update?shipMmsi=2343562&shipLongitude=120.3344433&shipLatitude=30.22222&shipHeading=30&shipSpeed=10&shipLoad=350&shipState=在航&requestId=10001
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T015325.200.json
-
-###
-
-POST http://localhost:8080/ship/upload/update?shipMmsi=234556&shipLongitude=120.3344433&shipLatitude=30.22222&shipHeading=30&shipSpeed=10&shipLoad=350&shipState=在航&requestId=10001
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T015204.200.json
-
-###
-
-POST http://localhost:8080/notice/info/add?requestId=requestId:10001&noticeName=测试通知20191119&noticeClass=港航&noticeContent=20191119测试，加入监视显示&noticeLatitude=30.0000111&noticeLongitude=120.0000111
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T114110.200.json
-
-###
-
-POST http://localhost:8080/notice/info/add?requestId=requestId:10001&noticeName=测试通知20191119&noticeClass=港航&noticeContent=20191119测试，加入监视显示
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T113108.200.json
-
-###
-
-POST http://localhost:8080/notice/info/getLatest?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T112432.200.json
-
-###
-
-POST http://localhost:8080/maintenance/info/sortByDistance?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T112253.200.json
-
-###
-
-POST http://localhost:8080/general/dynamic/gasSortByDistance?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111908.200.json
-
-###
-
-POST http://localhost:8080/general/dynamic/recyclingSortByDistance?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111901.200.json
-
-###
-
-POST http://localhost:8080/general/dynamic/chargerSortByDistance?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111854.200.json
-
-###
-
-POST http://localhost:8080/general/dynamic/berthSortByDistance?longitude=120.624949&latitude=30.716588&requestId=shipMmsi:444440000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111816.200.json
-
-###
-
-POST http://localhost:8080/general/dynamic/getBerth
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111241.200.json
-
-###
-
-POST http://localhost:8080/general/dynamic/getBerth?requestId=shipMmsi:4444400000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111235.200.json
-
-###
-
-POST http://localhost:8080/dock/info/list?fieldName=dockName&value=梧桐作业区&requestId=shipMmsi:4444400000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T111001.200.json
-
-###
-
-POST http://localhost:8080/dock/info/findByCondition?fieldName=dockName&value=梧桐作业区&requestId=shipMmsi:4444400000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T110419.200.json
-
-###
-
-POST http://localhost:8080/dock/info/findByCondition?fieldName=dockName&value=&value=梧桐作业区&requestId=shipMmsi:4444400000
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T110407.200.json
-
-###
-
-POST http://localhost:8080/dock/info/findByCondition?fieldName=dockName&value=&value=梧桐作业区&requestId=shipMmsi:4444400000
-Accept: */*
-enctype: "multipart/form-data"
-
-###
-
-POST http://localhost:8080/dock/info/sortByDistance?longitude=120.624949&latitude=30.716588&requestId=requestId:10001
-Accept: */*
-enctype: "multipart/form-data"
-
-<> 2019-11-19T110024.200.json
 
 ###
 

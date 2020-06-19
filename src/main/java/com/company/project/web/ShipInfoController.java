@@ -5,6 +5,7 @@ import com.company.project.core.ResultGenerator;
 import com.company.project.model.ShipInfo;
 import com.company.project.service.ShipInfoService;
 import com.company.project.service.ShipUploadService;
+import com.company.project.util.CoordinateConver;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,6 +27,7 @@ public class ShipInfoController {
     private ShipInfoService shipInfoService;
     private ShipUploadService shipUploadService;
     private ShipInfo shipInfo;
+    private CoordinateConver coordinateConver;
 
     @PostMapping("/add")
     public Result add(ShipInfo shipInfo,@RequestParam(defaultValue = "requestId:0") String requestId) {
@@ -61,15 +63,26 @@ public class ShipInfoController {
 
     /**
      * 查询所有船（包括静态船）
+     * coordinate: 默认为WGS84，传参BD09为百度坐标系
      */
     @PostMapping("/list")
-    public Result list(@RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "0") Integer size,@RequestParam(defaultValue = "requestId:0") String requestId) {
+    public Result list(@RequestParam(defaultValue = "0") String coordinate, @RequestParam(defaultValue = "0") Integer page, @RequestParam(defaultValue = "0") Integer size,@RequestParam(defaultValue = "requestId:0") String requestId) {
         PageHelper.startPage(page, size);
         List<ShipInfo> list = shipInfoService.findAllIncludeStaticShip();
+    /**
+     * 坐标转换
+     * WGS84-->百度坐标 BD09
+     * */
+        if (coordinate.equals("BD09")) {
+        list = coordinateConver.gps84_To_Bd09(list);
+            System.out.println("**************坐标转换为BD09*******************");
+        }
+
         PageInfo pageInfo = new PageInfo(list);
         return ResultGenerator.genSuccessResult(pageInfo);
 
     }
+
 
     /**
      * 查询附近多少公里的位置，

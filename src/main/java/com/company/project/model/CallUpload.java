@@ -22,14 +22,17 @@ public class CallUpload {
     @Column(name = "Call_grade")
     private String callGrade;
 
+    @Column(name = "Call_unhandled")
+    private String callUnhandled;
+
     @Column(name = "Call_longitude")
     private BigDecimal callLongitude;
 
     @Column(name = "Call_latitude")
     private BigDecimal callLatitude;
 
-    @Column(name = "Channel_division_ID")
-    private String channelDivisionId;
+    @Column(name = "Call_ship")
+    private String callShip;
 
     @Column(name = "Call_mmsi")
     private Integer callMmsi;
@@ -96,6 +99,14 @@ public class CallUpload {
         this.callGrade = callGrade;
     }
 
+    public String getCallUnhandled() {
+        return callUnhandled;
+    }
+
+    public void setCallUnhandled(String callUnhandled) {
+        this.callUnhandled = callUnhandled;
+    }
+
     /**
      * @return Call_longitude
      */
@@ -124,18 +135,12 @@ public class CallUpload {
         this.callLatitude = callLatitude;
     }
 
-    /**
-     * @return Channel_division_ID
-     */
-    public String getChannelDivisionId() {
-        return channelDivisionId;
+    public String getCallShip() {
+        return callShip;
     }
 
-    /**
-     * @param channelDivisionId
-     */
-    public void setChannelDivisionId(String channelDivisionId) {
-        this.channelDivisionId = channelDivisionId;
+    public void setCallShip(String callShip) {
+        this.callShip = callShip;
     }
 
     /**

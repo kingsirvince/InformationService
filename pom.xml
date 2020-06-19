@@ -152,7 +152,10 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-        <dependency>
+
+<!--        部署tomcat运行时，报错“Detected both log4j-over-slf4j.jar AND bound slf4j-log4j12.jar on the class”-->
+<!--        所以把slf4j相关的2个jar包，注释掉了 2020.05.28-->
+<!--        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.21</version>
@@ -162,7 +165,8 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.21</version>
-        </dependency>
+        </dependency>-->
+
         <!--@Data 自动setget等 lombok  https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>

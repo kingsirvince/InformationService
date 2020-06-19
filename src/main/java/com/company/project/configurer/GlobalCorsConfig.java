@@ -5,7 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
-
+/*解决Cors问题，跨域资源共享，跨域访问。
+* */
 @Configuration
 public class GlobalCorsConfig {
 

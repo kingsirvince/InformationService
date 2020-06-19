@@ -26,6 +26,22 @@ public class CallUploadController {
     private CallUploadService callUploadService;
 
     /**
+     * 查询未处理报警
+     * @param requestId 发起请求的ID
+     * @return          查询call_upload中未处理的报警，callGrade=1，返回List<CallUpload>
+     */
+    @PostMapping("/findUnhandledAlarm")
+    public Result findUnhandledAlarm(@RequestParam(defaultValue = "requestId:0") String requestId) {
+
+        Condition condition = new Condition(CallUpload.class);
+        Example.Criteria criteria = condition.createCriteria();
+        criteria.orEqualTo("callGrade", "1");
+
+        List<CallUpload> list = callUploadService.findByCondition(condition);
+        return ResultGenerator.genSuccessResult(list);
+    }
+
+    /**
      * 按条件查询   (例如查询“梧桐作业区“）
      * @param fieldName  代表字段名（Model中的成员变量，DockInfo）   fieldName=dockName
      * @param value      可以不是唯一的（返回多个List）              value=梧桐作业区
@@ -52,6 +68,12 @@ public class CallUploadController {
         return ResultGenerator.genSuccessResult();
     }
 
+    /**
+     * 修改报警
+     * @param callUpload  id=？&callGrade=0
+     * @param requestId
+     * @return
+     */
     @PostMapping("/update")
     public Result update(CallUpload callUpload,@RequestParam(defaultValue = "requestId:0") String requestId) {
         callUploadService.update(callUpload);

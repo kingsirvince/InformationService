@@ -46,6 +46,13 @@ public class CallInfoController {
         List<CallInfo> list = callInfoService.findByCondition(condition);
         return ResultGenerator.genSuccessResult(list);
     }
+
+    /**
+     * 新增报警
+     * @param callInfo
+     * @param requestId
+     * @return
+     */
     @PostMapping("/add")
     public Result add(CallInfo callInfo,@RequestParam(defaultValue = "requestId:0") String requestId) {
         callInfoService.save(callInfo);
@@ -58,6 +65,12 @@ public class CallInfoController {
         return ResultGenerator.genSuccessResult();
     }
 
+    /**
+     * 修改报警
+     * @param callInfo    id=?&Call_grade=0  （修改报警已结束）
+     * @param requestId
+     * @return
+     */
     @PostMapping("/update")
     public Result update(CallInfo callInfo,@RequestParam(defaultValue = "requestId:0") String requestId) {
         callInfoService.update(callInfo);
